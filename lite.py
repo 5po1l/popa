@@ -33,7 +33,7 @@ def spam():
 		print("\033[1;33m[ DONE ] Stopped...\033[0m")
 		sys.exit(1)
 	elif sys.argv[1] == "--call":
-		print __banner__
+		print ("__banner__")
 		param = {'msisdn':''+sys.argv[2],'accept':'call'}
 		count = 0
 		while (count < 3):
@@ -47,14 +47,14 @@ def spam():
 		print("\033[1;33m[ DONE ] Stopped...")
 		sys.exit(1)
 	else:
-		print __banner__
+		print ("__banner__")
 		print "Usage: lite.py [--sms/--call] PHONE"
 		print "lite.py: error: %s option requires an argument" %options
 		sys.exit()
 
 if __name__ == '__main__':
 	if len(sys.argv) != 3:
-		print __banner__
+		print ("__banner__")
 		print "Usage: lite.py [--sms/--call] PHONE"
 		sys.exit(0)
 	else:
